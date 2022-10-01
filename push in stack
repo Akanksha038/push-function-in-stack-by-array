@@ -1,1 +1,31 @@
+#include<stdio.h>
+int stack[5];
+int top;
+int max_size=5;
+void push(int element);
+// void pop();
+// int peek();
+// int display();
+int main()
+{ int element;
+    top=-1;
+    // printf(" enter element ");
+    // scanf("%d",& element);
+    push(10);
+    push(20);
+    push(30);
+    return 0;
+}
+void push(int element )
+{
+    // if(top==-1)
+    // {
+    //     printf(" overflow");
+    // }
+    // else{
+    top=top+1;
+    stack[top]=element;
+    printf("pushed element is %d",stack[top]);
+    }
+
 
